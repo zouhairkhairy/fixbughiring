@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/fixbug/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/composer" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/fixbug/vendor/incenteev/composer-parameter-handler" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="5.5.0" />
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+</project>

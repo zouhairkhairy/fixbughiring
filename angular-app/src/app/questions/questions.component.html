@@ -1,0 +1,49 @@
+
+<div class="row">
+
+  <div class="col-md-12 d-flex flex-column align-items-center justify-content-center">
+    <h3 class="text-success mt-5">Liste de questions:</h3>
+    <h5 class="text-center mt-10">
+      <p>Veuillez répondre aux questions ci-dessous successivement avant la fin du délai.</p>
+    </h5>
+    <div class="card mt-5" style="width: 90%;background: #fefefe">
+      <div class="card-body">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item" >
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h4 class="text-info">1) Création d'un nouveau composant :</h4>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Dans cette phase vous serez menées à créer un <code>composant</code> angular. Ce composant aura comme nom <code>listeArticle</code> et comme lien <code>/liste_article</code>. la redirection vers cette page se fera en cliquant sur ce bouton <button class="btn btn-sm btn-info text-white">liste des articles</button>. un bouton <code>retour</code> doit être présent sur la page de listeArticle pour retrouver la page de questions.</div>
+            </div>
+          </div>
+          <div class="accordion-item" >
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <h4 class="text-info">2) Récuperation de liste et affichage :</h4>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">A l'aide de la fonction <code>getList</code> du service <code>list</code> récupérer la liste d'articles et afficher la sur la page <code>ListeArticle</code>.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h4 class="text-info">3) Création d'une action :</h4>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Créer une action sur le contrôlleur <code>DefaultController</code> avec une route <code>/api/newroute</code> retournant un json avec un message <code>nouvelle action créée avec succès </code> et afficher ce message aprés la liste des articles. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

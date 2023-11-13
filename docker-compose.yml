@@ -1,0 +1,64 @@
+version: '3'
+
+services:
+  # PHP Service
+  php:
+    build:
+      context: .
+      dockerfile: symfony.dockerfile
+    volumes:
+      - ./fixbug:/var/www/symfony
+    working_dir: /var/www/symfony
+    networks:
+      - app-network
+
+  # Nginx Service
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx-config:/etc/nginx/conf.d
+      - ./fixbug:/var/www/symfony
+    depends_on:
+      - php
+    networks:
+      - app-network
+
+  # MySQL Service
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: fixbug
+      MYSQL_USER: fixbug
+      MYSQL_PASSWORD: fixbug
+    ports:
+      - "3306:3306"
+    networks:
+      - app-network
+
+  # PHPMyAdmin Service
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - "8080:80"
+    networks:
+      - app-network
+  angular-app:
+    image: node:16
+    container_name: angular-container
+    working_dir: /app
+    volumes:
+      - ./angular-app:/app
+    ports:
+      - "4200:4200" # Port d'écoute d'Angular
+    command: ["npm","start"]
+networks:
+  app-network:
+    driver: bridge
+
