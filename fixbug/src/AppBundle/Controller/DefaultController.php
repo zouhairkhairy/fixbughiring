@@ -2,18 +2,21 @@
 
 namespace AppBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class DefaultController extends Controller
+class DefaultController extends AbstractController
+
 {
+
+    
     /**
      * @Route("/api/getlist", name="homepage")
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-        dd($request);
         $produits = [
             [
                 "nom" => "Ordinateur portable",
@@ -41,7 +44,32 @@ class DefaultController extends Controller
             ]
         ];
 
-        return $produits;
+        // Create a JSON response
+        $response = new JsonResponse($produits);
+
+        // Set CORS headers
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        $response->headers->set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+        $response->headers->set('Access-Control-Allow-Headers', 'Content-Type');
+
+        return $response;
     }
 
+    /**
+     * @Route("/api/newroute", name="new-route")
+     */
+    public function newRouteAction()
+    {
+        $response = [
+            'message' => 'Nouvelle action créée avec succès',
+        ];
+        
+        $response = new JsonResponse($response);
+
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        $response->headers->set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+        $response->headers->set('Access-Control-Allow-Headers', 'Content-Type');
+
+        return $response;
+    }
 }

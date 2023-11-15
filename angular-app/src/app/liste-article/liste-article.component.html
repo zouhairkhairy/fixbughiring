@@ -1,0 +1,30 @@
+
+<div class="row">
+  <div class="col-md-12 d-flex flex-column align-items-center justify-content-center">
+    <h3 class="text-success mt-5">Liste des articles:</h3>
+    <div class="card mt-5" style="width: 90%;background: #fefefe">
+      <table class="article-table">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Marque</th>
+            <th>Prix</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let article of list_article">
+            <td>{{ article.nom }}</td>
+            <td>{{ article.marque }}</td>
+            <td>{{ article.prix }}</td>
+            <td>{{ article.stock }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button routerLink="/questions">Retour aux questions</button>
+    </div>
+    <div class="message">
+      <p>{{ message | json }}</p>    
+    </div>
+  </div>
+</div>
