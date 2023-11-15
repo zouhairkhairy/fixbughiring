@@ -57,7 +57,7 @@ services:
       - ./angular-app:/app
     ports:
       - "4200:4200" # Port d'écoute d'Angular
-    command: ["npm","start"]
+    command: bash -c "npm install && npm start"
 networks:
   app-network:
     driver: bridge
